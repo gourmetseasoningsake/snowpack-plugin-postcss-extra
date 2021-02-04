@@ -1,0 +1,26 @@
+{
+  "name": "@ampire/snowpack-plugin-postcss-extra",
+  "version": "0.1.1",
+  "main": "plugin.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "crocks": "^0.12.4",
+    "execa": "^5.0.0",
+    "glob": "^7.1.6"
+  },
+  "peerDependencies": {
+    "postcss": "*",
+    "postcss-cli": "*"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "esm": "^3.2.25",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
+  },
+  "scripts": {
+    "test": "ava plugin.spec.js",
+    "spec:cov": "nyc ava",
+    "spec:rep": "nyc --reporter=lcov --reporter=text-summary ava && open ./coverage/lcov-report/index.html"
+  }
+}
