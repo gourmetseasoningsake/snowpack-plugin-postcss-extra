@@ -16,12 +16,9 @@ import defaultProps from 'crocks/helpers/defaultProps';
 import safe from 'crocks/Maybe/safe';
 import getProp from 'crocks/Maybe/getProp';
 
-import not from 'crocks/logic/not';
-
 import isSame from 'crocks/predicates/isSame';
 import isObject from 'crocks/predicates/isObject';
 import isString from 'crocks/predicates/isString';
-import isEmpty from 'crocks/predicates/isEmpty';
 
 import constant from 'crocks/combinators/constant';
 
@@ -32,7 +29,6 @@ import constant from 'crocks/combinators/constant';
 
 const safeObject = safe(isObject);
 const safeString = safe(isString);
-const safeNotEmpty = safe(not(isEmpty));
 const safeJsExt = safe(x => x === '.js');
 const safeCssExt = safe(x => x === '.css');
 const safeJsTmpExt =

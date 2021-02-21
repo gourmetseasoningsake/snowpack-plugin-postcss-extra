@@ -33,11 +33,9 @@ export default [
       'crocks/helpers/defaultProps',
       'crocks/Maybe/safe',
       'crocks/Maybe/getProp',
-      'crocks/logic/not',
       'crocks/predicates/isSame',
       'crocks/predicates/isObject',
       'crocks/predicates/isString',
-      'crocks/predicates/isEmpty',
       'crocks/combinators/constant'
     ],
   }
