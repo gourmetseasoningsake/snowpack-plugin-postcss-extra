@@ -13,7 +13,7 @@ import {
 export default function ( snowpackConfig, pluginOptions = {} ) {
 
   const options = mergeDefaultOptions(pluginOptions);
-  const output = outputFromOptions(options);
+  const output = outputFromOptions(options).toArray();
 
   return {
     name: '@ampire/snowpack-plugin-postcss-extra',
