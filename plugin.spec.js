@@ -58,7 +58,7 @@ test.serial( 'load with default options',
 
 
 
-test.serial( 'load with option.js set to false',
+test.serial( 'load without js output',
 
   async t => {
 
@@ -67,7 +67,7 @@ test.serial( 'load with option.js set to false',
     const stubs = setupStubs(cssStr);
 
     //e
-    const pluginInstance = plugin({}, { js: false });
+    const pluginInstance = plugin({}, { output: ['.css'] });
     const result =
       await pluginInstance
       .load({

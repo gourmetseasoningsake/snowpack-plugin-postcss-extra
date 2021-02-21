@@ -25,16 +25,20 @@ export default [
       'execa',
       'crocks/List',
       'crocks/Async',
+      'crocks/First',
       'crocks/helpers/curry',
       'crocks/helpers/liftA2',
       'crocks/helpers/liftA3',
+      'crocks/helpers/mreduceMap',
+      'crocks/helpers/defaultProps',
       'crocks/Maybe/safe',
       'crocks/Maybe/getProp',
+      'crocks/logic/not',
       'crocks/predicates/isSame',
       'crocks/predicates/isObject',
       'crocks/predicates/isString',
-      'crocks/predicates/isTruthy',
-      'crocks/combinators/constant',
+      'crocks/predicates/isEmpty',
+      'crocks/combinators/constant'
     ],
   }
-]
+];
